@@ -25,6 +25,7 @@ function App() {
     rolete: '/images/1_rolete.png',
     motorJS200: '/images/2_motor_de_giro_JS200.png',
     unha: '/images/3_unha.png',
+    unha2: '/images/3_unha.png',
   };
 
   const handleWhatsAppClick = () => {
