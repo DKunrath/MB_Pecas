@@ -1,28 +1,32 @@
 import React from 'react';
 import { Phone, MessageCircle, Clock, Package, CheckCircle } from 'lucide-react';
 import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
-import logoMB from '../assets/images/logo_MB.png';
-import logoCase from '../assets/images/logo_case.png';
-import logoCaterpillar from '../assets/images/logo_caterpillar.png';
-import logoDoosan from '../assets/images/logo_doosan.png';
-import logoFiatallis from '../assets/images/logo_fiatallis.png';
-import logoHyundai from '../assets/images/logo_hyundai.png';
-import logoJCB from '../assets/images/logo_jcb.png';
-import logoJohnDeere from '../assets/images/logo_john_deere.png';
-import logoKomatsu from '../assets/images/logo_komatsu.png';
-import logoLiugong from '../assets/images/logo_liugong.png';
-import logoMaxLoader from '../assets/images/logo_maxloader.png';
-import logoNewHolland from '../assets/images/logo_new_holland.png';
-import logoSany from '../assets/images/logo_sany.png';
-import logoVolvo from '../assets/images/logo_volvo.png';
-import logoXcmg from '../assets/images/logo_xcmg.png';
-import backImage1 from '../assets/images/back_image_1.jpg';
-import backImage2 from '../assets/images/back_image_2.jpg';
-import rolete from '../assets/images/1_rolete.png';
-import motorJS200 from '../assets/images/2_motor_de_giro_JS200.png';
-import unha from '../assets/images/3_unha.png';
 
 function App() {
+
+  const images = {
+    logoMB: '/images/logo_MB.png',
+    logoCase: '/images/logo_case.png',
+    logoCaterpillar: '/images/logo_caterpillar.png',
+    logoDoosan: '/images/logo_doosan.png',
+    logoFiatallis: '/images/logo_fiatallis.png',
+    logoHyundai: '/images/logo_hyundai.png',
+    logoJCB: '/images/logo_jcb.png',
+    logoJohnDeere: '/images/logo_john_deere.png',
+    logoKomatsu: '/images/logo_komatsu.png',
+    logoLiugong: '/images/logo_liugong.png',
+    logoMaxLoader: '/images/logo_maxloader.png',
+    logoNewHolland: '/images/logo_new_holland.png',
+    logoSany: '/images/logo_sany.png',
+    logoVolvo: '/images/logo_volvo.png',
+    logoXcmg: '/images/logo_xcmg.png',
+    backImage1: '/images/back_image_1.jpg',
+    backImage2: '/images/back_image_2.jpg',
+    rolete: '/images/1_rolete.png',
+    motorJS200: '/images/2_motor_de_giro_JS200.png',
+    unha: '/images/3_unha.png',
+  };
+
   const handleWhatsAppClick = () => {
     window.open('https://wa.me/5551993605427', '_blank');
   };
@@ -34,26 +38,26 @@ function App() {
   };
 
   const products = [
-    { name: 'Roletes para Escavadeiras', image: rolete },
-    { name: 'Motor de Giro JS200', image: motorJS200 },
-    { name: 'Unha para Escavadeira', image: unha },
+    { name: 'Roletes para Escavadeiras', image: images.rolete },
+    { name: 'Motor de Giro JS200', image: images.motorJS200 },
+    { name: 'Unha para Escavadeira', image: images.unha },
   ];
 
   const brands = [
-    { name: 'Case', image: logoCase },
-    { name: 'Caterpillar', image: logoCaterpillar },
-    { name: 'Doosan', image: logoDoosan },
-    { name: 'Fiatallis', image: logoFiatallis },
-    { name: 'Hyundai', image: logoHyundai },
-    { name: 'JCB', image: logoJCB },
-    { name: 'John Deere', image: logoJohnDeere },
-    { name: 'Komatsu', image: logoKomatsu },
-    { name: 'LuiGong', image: logoLiugong },
-    { name: 'MaxLoader', image: logoMaxLoader },
-    { name: 'New Holland', image: logoNewHolland },
-    { name: 'Sany', image: logoSany },
-    { name: 'Volvo', image: logoVolvo },
-    { name: 'XCMG', image: logoXcmg },
+    { name: 'Case', image: images.logoCase },
+    { name: 'Caterpillar', image: images.logoCaterpillar },
+    { name: 'Doosan', image: images.logoDoosan },
+    { name: 'Fiatallis', image: images.logoFiatallis },
+    { name: 'Hyundai', image: images.logoHyundai },
+    { name: 'JCB', image: images.logoJCB },
+    { name: 'John Deere', image: images.logoJohnDeere },
+    { name: 'Komatsu', image: images.logoKomatsu },
+    { name: 'LuiGong', image: images.logoLiugong },
+    { name: 'MaxLoader', image: images.logoMaxLoader },
+    { name: 'New Holland', image: images.logoNewHolland },
+    { name: 'Sany', image: images.logoSany },
+    { name: 'Volvo', image: images.logoVolvo },
+    { name: 'XCMG', image: images.logoXcmg },
   ];
 
   return (
@@ -64,7 +68,7 @@ function App() {
           <div className="flex items-center justify-between h-20">
             <div className="w-60 h-18 rounded flex items-center justify-center">
               <img
-                src={logoMB}
+                src={images.logoMB}
                 alt="LogoMB"
                 className="w-full h-full object-cover"
               />
@@ -95,7 +99,7 @@ function App() {
       <section id="home" className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src={backImage1}
+            src={images.backImage1}
             alt="Retroescavadeira"
             className="w-full h-full object-cover filter blur-sm"
           />
@@ -184,7 +188,7 @@ function App() {
       <section className="relative py-20">
         <div className="absolute inset-0">
           <img
-            src={backImage2}
+            src={images.backImage2}
             alt="Retroescavadeira ao pôr do sol"
             className="w-full h-full object-cover"
           />
