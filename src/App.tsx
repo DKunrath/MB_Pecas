@@ -25,7 +25,7 @@ function App() {
     rolete: '/images/1_rolete.png',
     motorJS200: '/images/2_motor_de_giro_JS200.png',
     unha: '/images/3_unha.png',
-    unha2: '/images/3_unha.png',
+    caterpillar320: '/images/4_caterpillar_320.png',
   };
 
   const handleWhatsAppClick = () => {
@@ -42,6 +42,7 @@ function App() {
     { name: 'Roletes para Escavadeiras', image: images.rolete },
     { name: 'Motor de Giro JS200', image: images.motorJS200 },
     { name: 'Unha para Escavadeira', image: images.unha },
+    { name: 'CAT 320', image: images.caterpillar320 }
   ];
 
   const brands = [
@@ -161,6 +162,15 @@ function App() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-8">
+            <button
+              onClick={() => window.open('https://wa.me/yourwhatsappnumber?text=Quero%20saber%20mais%20sobre%20todos%20os%20produtos%20MB', '_blank')}
+              className="inline-flex items-center bg-custom-yellow text-custom-dark py-2 px-4 rounded-lg hover:bg-opacity-90 transition-colors font-semibold"
+            >
+              <FaWhatsapp className="w-6 h-6 mr-2" />
+              Ver todos os produtos MB
+            </button>
           </div>
         </div>
       </section>
